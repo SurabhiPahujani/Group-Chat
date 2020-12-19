@@ -1,0 +1,33 @@
+<!doctype html>
+<head>
+	<link rel="stylesheet" href="chat.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <meta http-equiv="refresh" content="20">   -->
+</head>
+	<body>
+			<form onsubmit="event.preventDefault();">
+      
+     
+				
+				<div id="postComment">
+					<label>Display Name: </label><input type="input" id="userName" placeholder="please enter your name"/>
+				
+				</div>
+				<div class="search-container">
+				<input type="text" placeholder="Search messages" name="search">
+				<button type="submit" onClick="searchMessage"><i class="fa fa-search"></i></button>
+			</div>
+			<hr class="solid">
+				<section id="viewComments">	
+				</section>
+				<div class="comment-section">
+					<textarea name="joinDiscussion" id="joinDiscussion" placeholder="Type a new message"></textarea>
+					<input class="PostButton width20" type="button" value="Send" id="post">
+				  </div>
+				<!-- <textarea name="joinDiscussion" id="joinDiscussion" cols=50 placeholder="Type a new message"></textarea> -->
+            </form>
+            <script src="chat.js">
+            </script>
+	</body>
+		
+
